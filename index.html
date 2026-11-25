@@ -51,18 +51,24 @@
     }
 
     .avatar-asesor {
-      width: 74px;
-      height: 74px;
+      width: 82px;
+      height: 82px;
       margin: 0 auto 14px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.16);
-      border: 2px solid rgba(255, 255, 255, 0.65);
+      background: #ffffff;
+      border: 3px solid rgba(255, 255, 255, 0.85);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #ffffff;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    }
+
+    .avatar-asesor img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .badge {
@@ -557,6 +563,16 @@
       text-decoration: none;
       font-weight: 700;
       font-size: 0.96rem;
+      animation: pulsoWhatsApp 2.2s ease-in-out infinite;
+    }
+
+    .btn-whatsapp:hover,
+    .btn-whatsapp:active,
+    .btn-whatsapp:focus {
+      background-color: var(--whatsapp-hover);
+      color: #ffffff;
+      animation-play-state: paused;
+      transform: translateY(-3px) scale(1.04);
     }
 
     .nota-rapida {
@@ -571,6 +587,63 @@
       color: #e2e8f0;
       margin-top: 36px;
       font-size: 0.9rem;
+    }
+
+    /* Animaciones en encabezado y botón de WhatsApp */
+    @keyframes deslizarEncabezado {
+      from {
+        opacity: 0;
+        transform: translateY(-16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulsoBadge {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.25);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+      }
+    }
+
+    @keyframes pulsoWhatsApp {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.28);
+      }
+      50% {
+        transform: translateY(-2px) scale(1.03);
+        box-shadow: 0 12px 26px rgba(37, 211, 102, 0.45);
+      }
+    }
+
+    header .avatar-asesor,
+    header .badge,
+    header h1,
+    header .propuesta-valor,
+    header .header-meta {
+      animation: deslizarEncabezado 0.55s ease both;
+    }
+
+    header .badge {
+      animation: deslizarEncabezado 0.55s ease both, pulsoBadge 2.6s ease-in-out 0.7s infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      header .avatar-asesor,
+      header .badge,
+      header h1,
+      header .propuesta-valor,
+      header .header-meta,
+      .btn-whatsapp {
+        animation: none;
+      }
     }
 
     @media (max-width: 640px) {
@@ -598,7 +671,9 @@
 <body>
 
 <header>
-  <div class="avatar-asesor" aria-hidden="true">YB</div>
+  <div class="avatar-asesor">
+    <img src="logo-yb.jpg" alt="Logo Yerson Bermúdez">
+  </div>
   <span class="badge">Asesoría Comercial Verificada • Tigo y Movistar</span>
   <h1>Hola, soy Yerson Bermúdez</h1>
   <p class="propuesta-valor"><strong>Soluciones de conectividad, planes móviles y hogar</strong> pensadas para lo que realmente necesitas.</p>
@@ -722,7 +797,7 @@
           <ul class="plan-lista">
             <li>Tigo: 500 a 900 MB según cobertura de red</li>
             <li>Movistar: 900 MB simétricos</li>
-                        <li>Conexión estable para carga y descarga simultánea</li>
+            <li>Conexión estable para carga y descarga simultánea</li>
           </ul>
         </div>
         <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20el%20plan%20Hogar%20Fibra%20m%C3%A1s%20por%20$64.900%20y%20quiero%20validar%20cobertura."
