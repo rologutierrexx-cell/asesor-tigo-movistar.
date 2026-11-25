@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yerson Bermúdez | Asesor Comercial Tigo y Movistar — Área Metropolitana</title>
+  <style>
+    :root {
+      --primary: #00377b;
+      --primary-dark: #001f47;
+      --movistar-green-1: #5cb615;
+      --movistar-green-2: #009444;
+      --bg-page: #f1f5f9;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-subtle: #e2e8f0;
+      --whatsapp: #25D366;
+      --whatsapp-hover: #1ebe5d;
+      --tigo: #00377b;
+      --tigo-hover: #002352;
+      --movistar: #009444;
+      --movistar-hover: #007737;
+      --apps-btn: #0f233c;
+      --apps-btn-hover: #1d3b5e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(130deg, #001e44 0%, var(--primary) 50%, var(--movistar-green-2) 86%, var(--movistar-green-1) 100%);
+      color: #ffffff;
+      text-align: center;
+      padding: 58px 20px 84px;
+    }
+
+    .avatar-asesor {
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 14px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.16);
+      border: 2px solid rgba(255, 255, 255, 0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .propuesta-valor {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      font-size: 1.03rem;
+      color: #f8fafc;
+    }
+
+    .header-meta {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .slogan-header {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: rgba(0, 28, 66, 0.42);
+      padding: 5px 14px;
+      border-radius: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .container {
+      max-width: 1020px;
+      margin: -38px auto 44px;
+      padding: 0 16px;
+    }
+
+    section {
+      background: var(--bg-card);
+      padding: 30px 24px;
+      border-radius: 16px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-header {
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.32rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      width: 5px;
+      height: 20px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, var(--primary), var(--movistar-green-1));
+      flex-shrink: 0;
+    }
+
+    h3.subtitulo-bloque {
+      color: var(--text-main);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 6px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    p {
+      color: var(--text-muted);
+    }
+
+    .credenciales-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .credencial-item {
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 15px 16px;
+    }
+
+    .credencial-item strong {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .credencial-item span {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .cobertura-box {
+      margin-top: 16px;
+      padding: 15px 18px;
+      border-radius: 12px;
+      background: #f2fbf6;
+      border: 1px solid #c6ebd6;
+    }
+
+    .cobertura-titulo {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--movistar-green-2);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .ciudades-lista {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .ciudad-chip {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 50px;
+      background: #ffffff;
+      border: 1px solid #a7dfbf;
+      color: var(--text-main);
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .nota-red {
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: #f0f7ff;
+      border-left: 4px solid var(--primary);
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+
+    .radio-filtro {
+      display: none;
+    }
+
+    .filtros-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: #f1f5f9;
+      padding: 6px;
+      border-radius: 14px;
+      margin-top: 14px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .filtro-label {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .filtro-count {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 50px;
+      background: #e2e8f0;
+      color: var(--text-muted);
+    }
+
+    #tab-todos:checked ~ .filtros-bar label[for="tab-todos"],
+    #tab-pospago:checked ~ .filtros-bar label[for="tab-pospago"],
+    #tab-fibra:checked ~ .filtros-bar label[for="tab-fibra"],
+    #tab-duo:checked ~ .filtros-bar label[for="tab-duo"],
+    #tab-trio:checked ~ .filtros-bar label[for="tab-trio"],
+    #tab-apps:checked ~ .filtros-bar label[for="tab-apps"] {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: 0 2px 8px rgba(0, 55, 123, 0.12);
+    }
+
+    #tab-todos:checked ~ .filtros-bar label[for="tab-todos"] .filtro-count,
+    #tab-pospago:checked ~ .filtros-bar label[for="tab-pospago"] .filtro-count,
+    #tab-fibra:checked ~ .filtros-bar label[for="tab-fibra"] .filtro-count,
+    #tab-duo:checked ~ .filtros-bar label[for="tab-duo"] .filtro-count,
+    #tab-trio:checked ~ .filtros-bar label[for="tab-trio"] .filtro-count,
+    #tab-apps:checked ~ .filtros-bar label[for="tab-apps"] .filtro-count {
+      background: #dbeafe;
+      color: var(--primary);
+    }
+
+    #tab-pospago:checked ~ .planes-grid .plan-card:not([data-categoria="pospago"]),
+    #tab-fibra:checked ~ .planes-grid .plan-card:not([data-categoria="fibra"]),
+    #tab-duo:checked ~ .planes-grid .plan-card:not([data-categoria="duo"]),
+    #tab-trio:checked ~ .planes-grid .plan-card:not([data-categoria="trio"]),
+    #tab-apps:checked ~ .planes-grid .plan-card:not([data-categoria="apps"]) {
+      display: none;
+    }
+
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .plan-card {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .plan-card.destacado {
+      border: 2px solid var(--primary);
+    }
+
+    .plan-etiqueta {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary-dark);
+      background: #e0edff;
+      padding: 4px 10px;
+      border-radius: 50px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+
+    .plan-card.destacado .plan-etiqueta {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .plan-card h3 {
+      font-size: 1.24rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .plan-slogan {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .plan-precio-box {
+      margin-bottom: 14px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .plan-precio {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+
+    .plan-precio span {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .plan-promo {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--movistar-green-2);
+      background: #e6f7ed;
+      padding: 3px 9px;
+      border-radius: 6px;
+    }
+
+    .plan-lista {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .plan-lista li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .plan-lista li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--movistar-green-2);
+      font-weight: 800;
+    }
+
+    .btn-plan {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.93rem;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--tigo) 0%, #0052a5 100%);
+    }
+
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .servicio-item {
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .servicio-item h3 {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .servicio-item p {
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .btn-servicio {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: #e8f1fb;
+      color: var(--primary);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .faq-lista {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      background: #f8fafc;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      list-style: none;
+      padding: 14px 18px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      cursor: pointer;
+    }
+
+    .faq-respuesta {
+      padding: 0 18px 16px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .cotizar-rapido {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn-operador {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .btn-tigo {
+      background-color: var(--tigo);
+    }
+
+    .btn-movistar {
+      background: linear-gradient(135deg, var(--movistar-green-1) 0%, var(--movistar-green-2) 100%);
+    }
+
+    .btn-cobertura {
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    }
+
+    .btn-apps {
+      background-color: var(--apps-btn);
+    }
+
+    .btn-operador svg,
+    .btn-whatsapp svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .acciones-contacto {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--whatsapp);
+      color: #ffffff;
+      padding: 13px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.96rem;
+    }
+
+    .nota-rapida {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      background: linear-gradient(125deg, #001e44 0%, #0b2d24 100%);
+      color: #e2e8f0;
+      margin-top: 36px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 1.85rem;
+      }
+
+      section {
+        padding: 22px 16px;
+      }
+
+      .filtro-label {
+        flex: 1 1 42%;
+        justify-content: center;
+      }
+
+      .btn-operador,
+      .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="avatar-asesor" aria-hidden="true">YB</div>
+  <span class="badge">Asesoría Comercial Verificada • Tigo y Movistar</span>
+  <h1>Hola, soy Yerson Bermúdez</h1>
+  <p class="propuesta-valor"><strong>Soluciones de conectividad, planes móviles y hogar</strong> pensadas para lo que realmente necesitas.</p>
+  <div class="header-meta">
+    <span class="slogan-header">Movistar ahora es Tigo</span>
+    <span class="slogan-header">Lun – Sáb • 8:00 a. m. – 7:00 p. m.</span>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <div class="section-header">
+      <h2>Sobre mí</h2>
+      <p>Soy asesor comercial especializado en servicios de telecomunicaciones para Tigo y Movistar. Te acompaño en todo el proceso —validación de cobertura, portabilidad, migración e instalación— con información clara y sin costos ocultos.</p>
+    </div>
+
+    <div class="credenciales-grid">
+      <div class="credencial-item">
+        <strong>Acompañamiento integral</strong>
+        <span>Seguimiento desde la cotización hasta la activación o instalación en tu hogar.</span>
+      </div>
+      <div class="credencial-item">
+        <strong>Horario de atención</strong>
+        <span>Lunes a sábado de 8:00 a. m. a 7:00 p. m. Respuesta directa por WhatsApp.</span>
+      </div>
+    </div>
+
+    <div class="cobertura-box">
+      <span class="cobertura-titulo">Zona de cobertura — Área Metropolitana:</span>
+      <div class="ciudades-lista">
+        <span class="ciudad-chip">Bucaramanga</span>
+        <span class="ciudad-chip">Girón</span>
+        <span class="ciudad-chip">Floridablanca</span>
+        <span class="ciudad-chip">Piedecuesta</span>
+      </div>
+    </div>
+
+    <p class="nota-red"><strong>Velocidad por operador:</strong> En <strong>Tigo</strong> las megas van de <strong>500 a 900 MB</strong> según disponibilidad de red; en <strong>Movistar</strong> aplican los mismos planes con <strong>900 MB</strong>.</p>
+  </section>
+
+  <section id="seccion-planes">
+    <div class="section-header">
+      <h2>Planes Hogar, Móviles y Apps</h2>
+      <p>Toca una categoría para filtrar los planes disponibles o revisa todo el catálogo:</p>
+    </div>
+
+    <input type="radio" name="categoria-plan" id="tab-todos" class="radio-filtro" checked>
+    <input type="radio" name="categoria-plan" id="tab-pospago" class="radio-filtro">
+    <input type="radio" name="categoria-plan" id="tab-fibra" class="radio-filtro">
+    <input type="radio" name="categoria-plan" id="tab-duo" class="radio-filtro">
+    <input type="radio" name="categoria-plan" id="tab-trio" class="radio-filtro">
+    <input type="radio" name="categoria-plan" id="tab-apps" class="radio-filtro">
+
+    <div class="filtros-bar" aria-label="Filtrar planes por categoría">
+      <label for="tab-todos" class="filtro-label">Todos <span class="filtro-count">7</span></label>
+      <label for="tab-pospago" class="filtro-label">Pospago <span class="filtro-count">2</span></label>
+      <label for="tab-fibra" class="filtro-label">Solo Fibra <span class="filtro-count">1</span></label>
+      <label for="tab-duo" class="filtro-label">Planes DUO <span class="filtro-count">1</span></label>
+      <label for="tab-trio" class="filtro-label">Planes TRIO <span class="filtro-count">1</span></label>
+      <label for="tab-apps" class="filtro-label">Apps <span class="filtro-count">2</span></label>
+    </div>
+
+    <div class="planes-grid" id="grid-planes">
+      <article class="plan-card" data-categoria="pospago">
+        <div>
+          <span class="plan-etiqueta">Portabilidad • Pospago</span>
+          <h3>Pospago ilimitado</h3>
+          <p class="plan-slogan">Conserva tu número actual con beneficios de bienvenida</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$49.900 <span>/ mes normal</span></p>
+            <span class="plan-promo">Mes 1 gratis • Meses 2 y 3 a $24.950 (50%)</span>
+          </div>
+          <ul class="plan-lista">
+            <li>Minutos, datos y apps ilimitados</li>
+            <li>Exclusivo para portabilidad desde otro operador</li>
+            <li>1.er mes sin costo y meses 2 y 3 con 50% de descuento</li>
+            <li>A partir del 4.º mes aplica tarifa plena de $49.900</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20la%20portabilidad%20a%20Pospago%20ilimitado%20de%20$49.900%20(1.er%20mes%20gratis,%20meses%202%20y%203%20al%2050%)."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar Pospago portabilidad
+        </a>
+      </article>
+
+      <article class="plan-card" data-categoria="pospago">
+        <div>
+          <span class="plan-etiqueta">Migración y Línea Nueva • Pospago</span>
+          <h3>Pospago ilimitado</h3>
+          <p class="plan-slogan">Pasa de prepago a pospago o estrena línea</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$49.900 <span>/ mes normal</span></p>
+            <span class="plan-promo">Meses 1, 2 y 3 a $24.950 (50% dto.)</span>
+          </div>
+          <ul class="plan-lista">
+            <li>Minutos, datos y apps ilimitados</li>
+            <li>Aplica para migración y línea nueva</li>
+            <li>50% de descuento durante los primeros 3 meses</li>
+            <li>A partir del 4.º mes aplica tarifa plena de $49.900</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20el%20plan%20Pospago%20ilimitado%20de%20$49.900%20para%20migraci%C3%B3n%20y%20l%C3%ADnea%20nueva%20(meses%201,%202%20y%203%20al%2050%)."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar Migración / Línea nueva
+        </a>
+      </article>
+
+      <article class="plan-card" data-categoria="fibra">
+        <div>
+          <span class="plan-etiqueta">Hogar • Solo Internet</span>
+          <h3>Fibra más</h3>
+          <p class="plan-slogan">Alta velocidad para trabajo, estudio y streaming</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$64.900 <span>/ mes</span></p>
+            <span class="plan-promo">Tigo: 500–900 MB • Movistar: 900 MB</span>
+          </div>
+          <ul class="plan-lista">
+            <li>Tigo: 500 a 900 MB según cobertura de red</li>
+            <li>Movistar: 900 MB simétricos</li>
+                        <li>Conexión estable para carga y descarga simultánea</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20el%20plan%20Hogar%20Fibra%20m%C3%A1s%20por%20$64.900%20y%20quiero%20validar%20cobertura."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar Fibra más
+        </a>
+      </article>
+
+      <article class="plan-card" data-categoria="duo">
+        <div>
+          <span class="plan-etiqueta">Hogar + Móvil • DUO</span>
+          <h3>Full Tigo (DUO)</h3>
+          <p class="plan-slogan">Internet hogar + línea móvil ilimitada en una sola factura</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$89.900 <span>/ mes</span></p>
+            <span class="plan-promo">Incluye Paramount+ por 12 meses</span>
+          </div>
+          <ul class="plan-lista">
+            <li>Tigo: 500 a 900 MB según red / Movistar: 900 MB</li>
+            <li>Plan pospago móvil ilimitado incluido</li>
+            <li>Suscripción a Paramount+ por 1 año</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20el%20plan%20Hogar%20Full%20Tigo%20(DUO)%20de%20$89.900."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar Full Tigo (DUO)
+        </a>
+      </article>
+
+      <article class="plan-card destacado" data-categoria="trio">
+        <div>
+          <span class="plan-etiqueta">Hogar + TV + Móvil • TRIO</span>
+          <h3>Full Tigo (TRIO)</h3>
+          <p class="plan-slogan">Fibra + TV avanzada + Pospago + Doble streaming</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$119.900 <span>/ mes</span></p>
+            <span class="plan-promo">Paramount+ + HBO Max por 12 meses</span>
+          </div>
+          <ul class="plan-lista">
+            <li>Tigo: 500 a 900 MB según red / Movistar: 900 MB</li>
+            <li>TV avanzada con 1 decodificador incluido</li>
+            <li>Plan pospago móvil ilimitado</li>
+            <li>Paramount+ y HBO Max incluidos por 12 meses</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20el%20plan%20Hogar%20Full%20Tigo%20(TRIO)%20de%20$119.900."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar Full Tigo (TRIO)
+        </a>
+      </article>
+
+      <article class="plan-card" data-categoria="apps">
+        <div>
+          <span class="plan-etiqueta">Deportes • Fútbol</span>
+          <h3>WIN +</h3>
+          <p class="plan-slogan">Todos los partidos del fútbol profesional colombiano</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$33.206 <span>/ mes x 12 meses</span></p>
+            <span class="plan-promo">Luego $40.900 IVA incluido</span>
+          </div>
+          <ul class="plan-lista">
+            <li>Transmisión de Liga, Copa, Torneo y Liga Femenina</li>
+            <li>Disponible para clientes con internet y televisión</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20activar%20WIN+%20($33.206%20x%2012%20meses,%20luego%20$40.900%20IVA%20incluido)."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar WIN +
+        </a>
+      </article>
+
+      <article class="plan-card" data-categoria="apps">
+        <div>
+          <span class="plan-etiqueta">Adicional TV • +18</span>
+          <h3>HOTPACK</h3>
+          <p class="plan-slogan">Entretenimiento adicional para televisión (+18)</p>
+          <div class="plan-precio-box">
+            <p class="plan-precio">$17.950 <span>/ 3 meses</span></p>
+            <span class="plan-promo">Luego $35.900 IVA incluido</span>
+          </div>
+          <ul class="plan-lista">
+            <li>3 meses a precio promocional de $17.950</li>
+            <li>Luego $35.900 IVA incluido</li>
+            <li>Para clientes con televisión</li>
+            <li>Aplica para mayores de edad (+18)</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20activar%20HOTPACK%20+18%20(3%20meses%20a%20$17.950,%20luego%20$35.900%20IVA%20incluido)."
+           class="btn-plan"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar HOTPACK
+        </a>
+      </article>
+    </div>
+
+    <h3 class="subtitulo-bloque">Resumen rápido de Planes Hogar</h3>
+    <p>Opciones disponibles para fibra, combos DUO y TRIO con validación en tu dirección:</p>
+    <div class="servicios-grid">
+      <div class="servicio-item">
+        <div>
+          <h3>Hogar • Fibra más ($64.900)</h3>
+          <p>Solo internet fibra óptica: Tigo 500–900 MB según red / Movistar 900 MB simétricos.</p>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20cotizar%20el%20plan%20Hogar%20Fibra%20m%C3%A1s%20($64.900)."
+           class="btn-servicio"
+           target="_blank"
+           rel="noopener noreferrer">
+          Cotizar Fibra más
+        </a>
+      </div>
+
+      <div class="servicio-item">
+        <div>
+          <h3>Hogar • Full Tigo DUO ($89.900)</h3>
+          <p>Fibra hogar + Pospago ilimitado + Paramount+ por 1 año.</p>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20cotizar%20el%20plan%20Hogar%20Full%20Tigo%20DUO%20($89.900)."
+           class="btn-servicio"
+           target="_blank"
+           rel="noopener noreferrer">
+          Cotizar Plan DUO
+        </a>
+      </div>
+
+      <div class="servicio-item">
+        <div>
+          <h3>Hogar • Full Tigo TRIO ($119.900)</h3>
+          <p>Fibra hogar + TV avanzada (1 DECO) + Pospago ilimitado + Paramount+ y HBO Max (12 meses).</p>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20cotizar%20el%20plan%20Hogar%20Full%20Tigo%20TRIO%20($119.900)."
+           class="btn-servicio"
+           target="_blank"
+           rel="noopener noreferrer">
+          Cotizar Plan TRIO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <h2>Servicios</h2>
+      <p>Acompañamiento directo en cada etapa de tu contratación o renovación en Bucaramanga, Girón, Floridablanca y Piedecuesta:</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-item">
+        <div>
+          <h3>Internet y Hogar</h3>
+          <p>Planes de fibra óptica y paquetes hogar con opciones adaptadas a tu uso diario.</p>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20cotizar%20un%20plan%20de%20Internet%20y%20Hogar%20en%20el%20%C3%81rea%20Metropolitana."
+           class="btn-servicio"
+           target="_blank"
+           rel="noopener noreferrer">
+          Cotizar Internet y Hogar
+        </a>
+      </div>
+
+      <div class="servicio-item">
+        <div>
+          <h3>Planes Móviles y Portabilidad</h3>
+          <p>Conserva tu número actual o activa una nueva línea con beneficios vigentes.</p>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20informaci%C3%B3n%20sobre%20Planes%20M%C3%B3viles%20y%20Portabilidad."
+           class="btn-servicio"
+           target="_blank"
+           rel="noopener noreferrer">
+          Cotizar Móvil / Portabilidad
+        </a>
+      </div>
+
+      <div class="servicio-item">
+        <div>
+          <h3>Atención Personalizada</h3>
+          <p>Resolución de dudas, comparativas de planes y seguimiento cercano por chat.</p>
+        </div>
+        <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20necesito%20asesor%C3%ADa%20personalizada%20para%20elegir%20mi%20plan."
+           class="btn-servicio"
+           target="_blank"
+           rel="noopener noreferrer">
+          Solicitar Asesoría
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <h2>Preguntas Frecuentes</h2>
+      <p>Respuestas rápidas antes de iniciar tu solicitud:</p>
+    </div>
+    <div class="faq-lista">
+      <details class="faq-item">
+        <summary>¿Qué necesito para hacer portabilidad y conservar mi número?</summary>
+        <div class="faq-respuesta">Solo necesitas tu documento de identidad, tener tu línea activa y al día con tu operador actual, y recibir el código de confirmación por SMS. El cambio se programa sin quedarte sin servicio.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Por qué en Tigo las megas van de 500 a 900 MB y en Movistar son 900 MB?</summary>
+        <div class="faq-respuesta">La velocidad exacta en Tigo depende de la infraestructura y cobertura técnica disponible en tu dirección dentro de Bucaramanga, Girón, Floridablanca o Piedecuesta. En Movistar los planes aplican con 900 MB. Antes de contratar, valido tu dirección exacta.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cómo se activan las plataformas incluidas (Paramount+, HBO Max) o WIN+?</summary>
+        <div class="faq-respuesta">Una vez instalado o activado tu plan principal, te guío paso a paso para vincular tus cuentas de streaming o habilitar los canales adicionales en tu decodificador.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿En cuánto tiempo realizan la instalación del internet hogar?</summary>
+        <div class="faq-respuesta">Tras validar cobertura y aprobar la solicitud, la visita técnica suele agendarse entre 24 y 72 horas hábiles según disponibilidad en tu sector.</div>
+      </details>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <div class="section-header">
+      <h2>Contacto</h2>
+      <p>Elige una opción rápida para abrir WhatsApp con un mensaje listo o revisa las apps disponibles:</p>
+    </div>
+
+    <div class="cotizar-rapido">
+      <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20cotizar%20planes%20de%20Tigo%20(m%C3%B3vil,%20hogar%20o%20portabilidad)."
+         class="btn-operador btn-tigo"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.3L18.5 8 12 11.7 5.5 8 12 4.3zM5 9.8l6 3.4v6.5l-6-3.3V9.8zm8 9.9v-6.5l6-3.4v6.6l-6 3.3z"/>
+        </svg>
+        Cotizar planes Tigo
+      </a>
+
+      <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20cotizar%20planes%20de%20Movistar%20(fibra,%20m%C3%B3vil%20o%20portabilidad)."
+         class="btn-operador btn-movistar"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.3L18.5 8 12 11.7 5.5 8 12 4.3zM5 9.8l6 3.4v6.5l-6-3.3V9.8zm8 9.9v-6.5l6-3.4v6.6l-6 3.3z"/>
+        </svg>
+        Cotizar planes Movistar
+      </a>
+
+      <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20quiero%20validar%20cobertura%20de%20fibra%20en%20mi%20direcci%C3%B3n%20(Bucaramanga%20/%20Gir%C3%B3n%20/%20Floridablanca%20/%20Piedecuesta)."
+         class="btn-operador btn-cobertura"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+        </svg>
+        Validar cobertura en mi dirección
+      </a>
+
+      <a href="#seccion-planes" class="btn-operador btn-apps">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0h6v6h-6v-6z"/>
+        </svg>
+        Ir a Planes y Apps
+      </a>
+    </div>
+
+    <div class="acciones-contacto">
+      <a href="https://wa.me/573115184305?text=Hola%20Yerson,%20me%20interesa%20recibir%20asesor%C3%ADa%20sobre%20planes%20de%20Tigo%20y%20Movistar."
+         class="btn-whatsapp"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.256.59 4.458 1.71 6.4L3.1 29l6.776-1.776a12.74 12.74 0 0 0 6.128 1.56h.006c7.058 0 12.798-5.74 12.798-12.8 0-3.42-1.332-6.634-3.75-9.052A12.714 12.714 0 0 0 16.004 3.2zm0 23.424h-.004a10.61 10.61 0 0 1-5.41-1.482l-.388-.23-4.02 1.054 1.074-3.92-.252-.402a10.59 10.59 0 0 1-1.624-5.644c0-5.858 4.766-10.624 10.628-10.624 2.838 0 5.506 1.106 7.512 3.114a10.556 10.556 0 0 1 3.11 7.514c0 5.86-4.768 10.62-10.626 10.62zm5.828-7.956c-.32-.16-1.89-.932-2.182-1.038-.292-.106-.506-.16-.718.16-.214.32-.826 1.038-1.012 1.252-.186.212-.372.24-.692.08-.32-.16-1.35-.498-2.572-1.588-.95-.848-1.592-1.894-1.778-2.214-.186-.32-.02-.492.14-.652.144-.144.32-.372.48-.558.16-.186.212-.32.32-.532.106-.214.052-.4-.028-.558-.08-.16-.718-1.732-.984-2.37-.26-.622-.524-.538-.718-.548l-.612-.01c-.214 0-.56.08-.852.4-.292.32-1.118 1.092-1.118 2.664s1.144 3.09 1.304 3.304c.16.212 2.252 3.438 5.456 4.82.762.33 1.356.526 1.82.674.766.244 1.462.21 2.012.128.614-.092 1.89-.772 2.156-1.518.266-.746.266-1.384.186-1.518-.08-.134-.292-.214-.612-.372z"/>
+        </svg>
+        WhatsApp General • 311 518 4305
+      </a>
+      <span class="nota-rapida">Atención directa a tu línea 311 518 4305</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Yerson Bermúdez — Bucaramanga, Girón, Floridablanca y Piedecuesta</p>
+</footer>
+
+</body>
+</html>
